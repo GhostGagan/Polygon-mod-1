@@ -3,7 +3,7 @@
 ## NFT Collection README
 
 ## Overview
-This repository contains scripts and contracts to facilitate the creation, deployment, and management of an NFT collection. The collection is generated using DALLE 2 or Midjourney, stored on IPFS using pinata.cloud, and deployed on the Goerli Ethereum Testnet as ERC721 or ERC1155 tokens. Additionally, scripts are provided to handle batch minting, transferring NFTs between Ethereum and Polygon Mumbai using the FxPortal Bridge, and testing functionalities.
+This repository contains scripts and contracts to facilitate the creation, deployment, and management of an NFT collection. The collection is generated using DALLE 2 or Midjourney, stored on IPFS using pinata.cloud, and deployed on the sepolia Ethereum Testnet as ERC721 or ERC1155 tokens. Additionally, scripts are provided to handle batch minting, transferring NFTs between Ethereum and Polygon amoy using the FxPortal Bridge, and testing functionalities.
 
 ## Requirements
 - Node.js (v14 or above)
@@ -35,7 +35,7 @@ This repository contains scripts and contracts to facilitate the creation, deplo
 - Upload each generated image to IPFS using pinata.cloud for decentralized storage.
 
 ### Step 3: Deploy ERC721/ERC1155 Contract
-- Deploy the contract to the Goerli Ethereum Testnet. Ensure the contract includes a `promptDescription` function that returns the prompt used for image generation.
+- Deploy the contract to the sepolia Ethereum Testnet. Ensure the contract includes a `promptDescription` function that returns the prompt used for image generation.
 
 ### Step 4: Map Your NFT Collection (Optional)
 - Use the Polygon network token mapper to map your NFT collection for improved visualization and interoperability.
@@ -43,15 +43,15 @@ This repository contains scripts and contracts to facilitate the creation, deplo
 ### Step 5: Batch Mint NFTs
 - Execute the provided Hardhat script (`mint-nfts.js`) to batch mint all NFTs. Adjust parameters as necessary for ERC721 or ERC1155 standards.
 
-### Step 6: Batch Transfer to Polygon Mumbai
-- Utilize the Hardhat script (`transfer-nfts.js`) to batch transfer all minted NFTs from Ethereum to Polygon Mumbai using the FxPortal Bridge.
+### Step 6: Batch Transfer to Polygon amoy
+- Utilize the Hardhat script (`transfer-nfts.js`) to batch transfer all minted NFTs from Ethereum to Polygon amoy using the FxPortal Bridge.
 
 ### Step 7: Approve and Deposit NFTs
 - Approve the NFTs to be transferred using Metamask or similar wallet.
 - Deposit the NFTs to the FxPortal Bridge for cross-chain transfer.
 
-### Step 8: Test BalanceOf on Polygon Mumbai
-- Run tests using the Hardhat script (`test-balance.js`) to ensure correct balances of NFTs on Polygon Mumbai after transfer.
+### Step 8: Test BalanceOf on Polygon amoy
+- Run tests using the Hardhat script (`test-balance.js`) to ensure correct balances of NFTs on Polygon amoy after transfer.
 
 ## Additional Notes
 - Ensure all environment variables and configurations are correctly set before deploying or testing.
